@@ -1,0 +1,127 @@
+@import 'reset.css';
+
+html {
+    background: linear-gradient(180deg, #FF92DE, #E25D5D);
+    height: 100vh;
+    width: 100vw;
+    font-size: calc(100vw/192);
+    letter-spacing: 0.7rem;
+    font-family: 'Changa One', cursive;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* その他 */
+
+/* miyata jacket */
+.miyata-img {
+    position: absolute;
+    z-index: 10;
+    /* width: 1156px; */
+    width: 54.1%;
+    height: auto;
+    margin: -78px 0 0 -130px;
+}
+
+/* mainセクション 構造化+スタイリング */
+.main {
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    right: 11.7%;
+    left: 28%;
+}
+
+/* headerブロック 構造化 */
+.header {
+    width: 50%;
+    margin: 5% 0 0 19%;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.8rem;
+}
+
+.header-list-item {}
+
+
+/* titleブロック 構造化 */
+
+.title {
+    position: absolute;
+    top: 17%;
+    left: 19%;
+    height: 20%;
+}
+
+.title>* {
+    position: absolute;
+}
+
+.title-main {
+    font-size: 10rem;
+}
+
+.title-sub {
+    font-size: 2.8rem;
+    white-space: nowrap;
+    width: 100%;
+    top: 70%;
+}
+
+/* contentブロック 構造化 */
+.content {
+    /* margin: 14% 0 0 19%; */
+    /* z-index: 11; */
+    position: absolute;
+    top: 42%;
+    left: 19%;
+    width: 70%;
+}
+
+.content>* {
+    position: absolute;
+}
+
+.jacket-album-0 {
+    width: 284px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.desc {
+    /* float: left; */
+    left: 300px;
+}
+
+.jacket-album-0-desc {
+    font-size: 2.2rem;
+    /* ここの文字エリアはcontentのwidthに影響される */
+    word-break: break-all;
+}
+
+.btn-listen {
+    /* align-self: center;
+align-items: center; */
+}
+
+/* footer 構造か */
+footer {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+}
+
+.corporait {
+    font-size: 2rem;
+}
