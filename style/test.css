@@ -1,0 +1,73 @@
+/* 再生ボタン */
+#btn-listen {
+    width: calc(100vw*0.147);
+    height: calc(100vh*0.05);
+    border-radius: 3.5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    background: linear-gradient(180deg, #FF92DE, #E25D5D);
+}
+
+#btn-listen::after {
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+}
+
+#btn-listen::after {
+    top: 21px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+}
+
+#btn-listen::before {
+    top: 35px;
+    left: 85px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+/* ハンバーガー */
+.btn-start {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn-start__line,
+.btn-start__line::before,
+.btn-start__line::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: black;
+}
+
+.btn-start__line::before,
+.btn-start__line::after {
+    content: '';
+}
+
+.btn-start__line {
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.btn-start__line::before {
+    top: calc(50% + 8px);
+    transform: rotate(-45deg);
+}
+
+.btn-start__line::after {
+    top: calc(50% - 8px);
+    transform: rotate(-135deg);
+}

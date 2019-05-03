@@ -1,0 +1,8 @@
+/* @import "style.css" */
+a[href^="http"] {
+    color: #057BFF;
+}
+
+h5[class^="card-title"] {
+    font-weight: bolder;
+}

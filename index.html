@@ -4,54 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>layertest</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/commons.css">
+    <title>YudaiWork-Home</title>
 </head>
 
 <body>
-    <!-- miyata jacket -->
-    <section class="img">
-        <img class="miyata-img" src="img/miyata_long.png" alt="">
-    </section>
+    <div class="container">
+        <div class="row" style="padding: 20px 0 10px 0;">
+            <h1>work</h1>
+        </div>
+        <!-- xl以上はcol12、それ以下はcol3 -->
+        <div class="row align-item-center" style="padding: 0 0 25px 0;">
+            This is made of<a href="https://getbootstrap.com/">&ensp;Bootstrap4</a>
+            <!-- todo: ここに高さをつけたい > styleをあてて一時的に解決-->
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <div class="card" style="height: 284px; width: auto;">
+                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/miyata_loveagain.jpg" alt="loveagain">
+                    <div class="card-body">
+                        <h5 class="card-title text-wrap" style="width: 284px;">友人のアーティストMIYATAのプロフィールサイト</h5>
+                        <p class="card-text text-wrap" style="width: 284px;">Some quick example Some quick exampleSome
+                            quick exampleSome quick
+                            exampleSome quick exampleSome quick exampleSome quick exampleSome quick exampleSome quick
+                            example
+                        </p>
+                        <p class="card-text text-wrap"><small class="text-muted">2019/04/29~</small></p>
+                        <button type="button" class="btn btn-primary btn-lg" onclick="window.open('miyata/miyata-index.html')">Miyata
+                            Web</button>
+                    </div>
+                </div>
 
-    <!-- main content -->
-    <section class="main">
-        <!-- header -->
-        <header class="header">
-            <ul class="header-list">
-                <li class="header-list-item"><a href="#">MIYATA</a></li>
-                <li class="header-list-item"><a href="#">DISCO</a></li>
-                <li class="header-list-item"><a href="#">BIO</a></li>
-            </ul>
-            <ul class="header-list-icon">
-                <!-- todo: ラベルでliを囲んでクリックしやすいようにする方法 -->
-                <li></li>
-            </ul>
-        </header>
-        <!-- title -->
-        <article class="title">
-            <h1 class="title-main">MIYATA</h1>
-            <h2 class="title-sub">MUSICIAN<br> FROM MIYAZAKI</h2>
-        </article>
-        <!-- content -->
-        <article class="content">
-            <a href="#">
-                <img class="jacket-album-0" src="img/miyata_loveagain.jpg" alt="album-jacket">
-            </a>
-            <div class="desc">
-                <p class="jacket-album-0-desc">DESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDES
-                    CDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESC</p>
-                <input class="btn-listen" type="button" value="今すぐ聴く" onclick="window.open('https://google.com')">
+                <div class="card" style="height: 284px; width: auto;">
+                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/blank-img284.png" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">Coming soon</h5>
+                        <p class="card-text text-wrap" style="width: 284px;">quick exampleSome quick
+                            exampleSome quick exampleSome quick exampleSome quick exampleSome quick exampleSome quick
+                            example</p>
+                        <p class="card-text"><small class="text-muted">準備中</small></p>
+                    </div>
+                </div>
+
+                <div class="card" style="height: 284px; width: auto;">
+                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/blank-img284.png" alt="#">
+                    <div class="card-body">
+                        <h5 class="card-title">Coming soon</h5>
+                        <p class="card-text text-wrap" style="width: 284px;">quick exampleSome quick
+                            exampleSome quick exampleSome quick exampleSome quick exampleSome quick exampleSome quick
+                            example</p>
+                        <p class="card-text"><small class="text-muted">準備中</small></p>
+                    </div>
+                </div>
+
+
             </div>
-        </article>
+        </div>
+        <div class="row">
 
-        <footer>
-            <p class="corporait">&copy;MIYATA</p>
-        </footer>
+        </div>
 
-    </section>
-
+    </div>
 </body>
 
 </html>

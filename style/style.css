@@ -1,5 +1,9 @@
 @import 'reset.css';
 
+/* todo:oocss */
+
+
+
 html {
     background: linear-gradient(180deg, #FF92DE, #E25D5D);
     height: 100vh;
@@ -70,6 +74,11 @@ a {
 
 .title-main {
     font-size: 10rem;
+    color: #FF92DE;
+    /* background-clip: text;
+-webkit-background-clip: text;
+color: transparent; */
+
 }
 
 .title-sub {
@@ -108,12 +117,19 @@ a {
     font-size: 2.2rem;
     /* ここの文字エリアはcontentのwidthに影響される */
     word-break: break-all;
+    color: #FFC1EC;
 }
 
-.btn-listen {
-    /* align-self: center;
-align-items: center; */
-}
+
+
+/* todo: inputでセレクトするより、classセレクターでなんとかしたい */
+/* input[type="button"] {
+    margin: 5rem 9rem;
+} */
+
+
+
+
 
 /* footer 構造か */
 footer {
