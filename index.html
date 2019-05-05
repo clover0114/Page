@@ -15,60 +15,71 @@
     <div class="container">
 
         <!-- adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
-        <div class="row justify-content-center" style="padding: 20px 0 0 0;">
+        <div class="title-main row justify-content-center">
             <h5>yudai-hidaki</h5>
         </div>
-        <div class="row justify-content-center" style="padding: 0 0 10px 0;">
+        <div class="title-sub row justify-content-center">
             <h1>WORK</h1>
         </div>
 
 
-        <!-- xl以上はcol12、それ以下はcol3 -->
-        <div class="row justify-content-center" style="padding: 0 0 25px 0;">
-            This is made using<a href="https://getbootstrap.com/">&ensp;Bootstrap4</a>
-            <!-- todo: ここに高さをつけたい > styleをあてて一時的に解決-->
+        <!-- desc -->
+        <div class="desc row justify-content-center align-items-center">
+            This Page is made using<a href="https://getbootstrap.com/">&ensp;Bootstrap4</a>
         </div>
 
-        <div class="row justify-content-center">
+        <!-- cards -->
+        <div class="row d-flex justify-content-center cards">
             <div class="card-deck">
-                <div class="card" style="height: 284px; width: auto;">
-                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/miyata_loveagain.jpg" alt="loveagain">
+                <div class="card card-sizing">
+                    <img class="card-img-top" src="/img/miyata_loveagain.jpg" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-wrap" style="width: 284px;">友人のアーティストMIYATAのプロフィールサイト</h5>
-                        <p class="card-text text-wrap" style="width: 284px;">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
+                        <h5 class="card-title">友人のアーティストMIYATAのプロフィールサイト</h5>
+                        <p class="card-text text-wrap">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
                         </p>
-                        <p class="card-text text-wrap"><small class="text-muted">2019/04/29~</small></p>
-                        <button type="button" class="btn btn-primary btn-lg" onclick="window.open('miyata/miyata-index.html')">Miyata
-                            Web</button>
+                        <button type="button" class="btn btn-secondary">MIYATA</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last update ?</small>
                     </div>
                 </div>
 
-                <div class="card" style="height: 284px; width: auto;">
-                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/blank-img284.png" alt="#">
+                <div class="card card-sizing">
+                    <img class="card-img-top" src="/img/blank-img284.png" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Coming soon</h5>
-                        <p class="card-text text-wrap" style="width: 284px;">quick exampleSome quick
-                            exampleSome quick exampleSome quick exampleSome quick exampleSome quick exampleSome quick
-                            example</p>
-                        <p class="card-text"><small class="text-muted">準備中</small></p>
+                        <h5 class="card-title">Coming soon...</h5>
+                        <p class="card-text text-wrap">description.</p>
+                        <button type="button" class="btn btn-secondary">link</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">no status</small>
                     </div>
                 </div>
 
-                <div class="card" style="height: 284px; width: auto;">
-                    <img class="card-img-top" style="height: 284px; width: auto;" src="img/blank-img284.png" alt="#">
+                <div class="card card-sizing">
+                    <img class="card-img-top" src="/img/blank-img284.png" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Coming soon</h5>
-                        <p class="card-text text-wrap" style="width: 284px;">quick exampleSome quick
-                            exampleSome quick exampleSome quick exampleSome quick exampleSome quick exampleSome quick
-                            example</p>
-                        <p class="card-text"><small class="text-muted">準備中</small></p>
+                        <h5 class="card-title">Coming soon...</h5>
+                        <p class="card-text text-wrap">description.</p>
+                        <button type="button" class="btn btn-secondary">link</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">no status</small>
                     </div>
                 </div>
+
 
             </div>
         </div>
-        <div class="row">
 
+        <!-- testdirectory -->
+        <div class="testdirectory row d-flex justify-content-center align-items-start">
+            <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">bootstrap4-test</button>
+                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('iamcat/index.html')">display:grid-test</button>
+                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">test</button>
+                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">test</button>
+            </div>
         </div>
 
     </div>

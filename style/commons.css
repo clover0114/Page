@@ -4,10 +4,42 @@ h5 {
     margin: 0;
 }
 
+:root {
+    font-size: 62.5%;
+    padding: 1rem;
+}
+
+
 a[href^="http"] {
     color: #057BFF;
 }
 
 h5[class^="card-title"] {
     font-weight: bolder;
+}
+
+.desc {
+    height: 1rem;
+}
+
+.testdirectory {
+    margin: 3rem 0 0 0;
+    height: 5rem;
+}
+
+.title-main {
+    padding: 20px 0 0 0;
+}
+
+.title-sub {
+    padding: 0 0 10px 0;
+}
+
+.cards {
+    margin: 3rem 0 0 0;
+    /* height: 60rem; */
+}
+
+.card-sizing {
+    width: 284px;
 }
