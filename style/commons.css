@@ -19,17 +19,39 @@ h5[class^="card-title"] {
 }
 
 /* col-のpaddingを打ち消し */
-div[class^="col-"] {
+/* div[class^="col-"] {
     padding: 0;
+} */
+
+/* タイトル */
+
+.title-main {
+    padding: 0.2rem 0 0 0;
 }
+
+.title-main>h5 {
+    font-size: 2.3rem;
+}
+
+.title-sub {
+    padding: 0 0 0.1rem 0;
+}
+
+.title-sub>h1 {
+    font-size: 4.5rem;
+}
+
+/* このページについて */
 
 .desc {
-    height: 1rem;
+    height: 2.5rem;
 }
 
+/* グロナビ ぽいやつ*/
+
 .g-nav {
-    height: 1rem;
-    margin: 1.5rem 0;
+    height: 5rem;
+    /* margin: 1.5rem 0; */
 }
 
 .g-nav-list {
@@ -39,7 +61,6 @@ div[class^="col-"] {
     padding: 0;
 }
 
-/* fa-fwでも可能だが少し狭い */
 .g-nav-list li {
     padding: 0 .5rem;
 }
@@ -53,13 +74,9 @@ div[class^="col-"] {
     height: 5rem;
 }
 
-.title-main {
-    padding: 0.2rem 0 0 0;
-}
 
-.title-sub {
-    padding: 0 0 0.1rem 0;
-}
+
+
 
 .cards {
     margin: 3rem 0 0 0;
