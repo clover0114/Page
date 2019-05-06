@@ -1,0 +1,38 @@
+.card {}
+
+.jacket-img {
+    width: 15rem;
+}
+
+
+.g-navi {
+    position: relative;
+}
+
+.g-navi-items-text {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    /* right: 15%;
+left: 15%; */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.g-navi-items-text li {
+    list-style: none;
+    padding: 0 5rem;
+
+}
+
+.g-navi-items-icons {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    /* right: 15%;
+left: 15%; */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}

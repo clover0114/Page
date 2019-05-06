@@ -18,7 +18,7 @@ h5[class^="card-title"] {
     font-weight: bolder;
 }
 
-/* col-のpaddingを打ち消し */
+/* col-のpaddingを打ち消し > no-gutters で可能 */
 /* div[class^="col-"] {
     padding: 0;
 } */
@@ -35,6 +35,11 @@ h5[class^="card-title"] {
 
 .title-sub {
     padding: 0 0 0.1rem 0;
+}
+
+.fo-heebo {
+    font-family: 'Heebo', sans-serif;
+
 }
 
 .title-sub>h1 {
