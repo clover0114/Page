@@ -16,15 +16,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+
+    <!-- fontawesome5.8.1 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
     <!-- my stylesheet -->
     <link rel="stylesheet" href="style/commons.css">
     <title>YudaiWork-Home</title>
 </head>
 
+<!-- githubやgoogle driveなどのアカウントをアイコンで羅列したグロナビを設置 -->
+<!-- todo: ジャケットを拡大した後、クリック範囲が広すぎてマウスカーソル移動でホバー範囲から外すの面倒 -->
+<!-- todo: adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
+
 <body>
     <div class="container">
 
-        <!-- todo: adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
+
         <div class="title-main row justify-content-center">
             <h5>yudai-hidaki</h5>
         </div>
@@ -32,18 +41,25 @@
             <h1>WORK</h1>
         </div>
 
-
         <!-- desc -->
         <div class="desc row justify-content-center align-items-center">
             This Page is made using<a href="https://getbootstrap.com/">&ensp;Bootstrap4</a>
         </div>
 
+        <!-- global navigation -->
+        <div class="g-nav row justify-content-center align-items-center">
+            <ol class="g-nav-list">
+                <li><a href="https://github.com/clover0114/" target="_blank"><i class="fab fa-spin fa-3x my-gray fa-github"></i></a></li>
+            </ol>
+        </div>
+
         <!-- cards -->
         <div class="row d-flex justify-content-center cards">
-            <div class="card-deck">
-                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+            <div class="card-columns">
+                <div class="p-3">
                     <div class="card card-sizing">
-                        <img class="card-img-top" src="img/miyata_loveagain.jpg" alt="">
+                        <a href="miyata/miyata-index.html"><img class="jacket-img card-img-top" src="img/miyata_loveagain.jpg"
+                                alt=""></a>
                         <div class="card-body">
                             <h5 class="card-title">友人のアーティストMIYATAのプロフィールサイト</h5>
                             <p class="card-text text-wrap">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
@@ -54,7 +70,7 @@
                                 <span class="badge badge-pill badge-info">illustration</span>
                             </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-center">
                             <!-- todo: tooltipを表示 -->
                             <!-- <button type="button" class="btn btn-secondary" data-html="true" data-toggle="tooltip"
                                     data-placement="top" title="<a href="#">MIYATAのプロフィールサイト</a>">MIYATA</button> -->
@@ -65,15 +81,17 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+                <div class="p-3">
                     <div class="card card-sizing">
-                        <img class="card-img-top" src="img/blank-img284.png" alt="">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/Flower.png" alt=""></a>
                         <div class="card-body">
                             <h5 class="card-title">Coming soon...</h5>
                             <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3"></div>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-center">
                             <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
                                 title="blank">link</button>
                             <!-- <small class="text-muted">no status</small> -->
@@ -81,15 +99,71 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+                <div class="p-3">
                     <div class="card card-sizing">
-                        <img class="card-img-top" src="img/blank-img284.png" alt="">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/TABACO.png" alt=""></a>
                         <div class="card-body">
                             <h5 class="card-title">Coming soon...</h5>
                             <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3"></div>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <div class="card card-sizing">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Coming soon...</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <div class="card card-sizing">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Coming soon...</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <div class="card card-sizing">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Coming soon...</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
                             <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
                                 title="blank">link</button>
                             <!-- <small class="text-muted">no status</small> -->

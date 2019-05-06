@@ -27,17 +27,38 @@ div[class^="col-"] {
     height: 1rem;
 }
 
+.g-nav {
+    height: 1rem;
+    margin: 1.5rem 0;
+}
+
+.g-nav-list {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding: 0;
+}
+
+/* fa-fwでも可能だが少し狭い */
+.g-nav-list li {
+    padding: 0 .5rem;
+}
+
+.my-gray {
+    color: gray;
+}
+
 .testdirectory {
     margin: 3rem 0 0 0;
     height: 5rem;
 }
 
 .title-main {
-    padding: 20px 0 0 0;
+    padding: 0.2rem 0 0 0;
 }
 
 .title-sub {
-    padding: 0 0 10px 0;
+    padding: 0 0 0.1rem 0;
 }
 
 .cards {
@@ -46,6 +67,26 @@ div[class^="col-"] {
 }
 
 .card-sizing {
-/* これはレイアウトサイズによってレスポンシブに画像サイズが変更される */
+    /* これはレイアウトサイズによってレスポンシブに画像サイズが変更される */
     /* width: 28.4rem; */
 }
+
+/* カードのジャケットアニメーション */
+.card {
+    overflow: hidden;
+
+}
+
+.jacket-img {
+    display: block;
+    transition: .3s;
+}
+
+.jacket-img:hover {
+    transform: scale(3);
+    transition-duration: .3s;
+    /* cursor: pointer; */
+
+}
+
+/* カードのジャケットアニメーションここまで */
