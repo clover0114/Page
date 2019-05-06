@@ -18,6 +18,11 @@ h5[class^="card-title"] {
     font-weight: bolder;
 }
 
+/* col-のpaddingを打ち消し */
+div[class^="col-"] {
+    padding: 0;
+}
+
 .desc {
     height: 1rem;
 }
@@ -41,5 +46,6 @@ h5[class^="card-title"] {
 }
 
 .card-sizing {
-    width: 284px;
+/* これはレイアウトサイズによってレスポンシブに画像サイズが変更される */
+    /* width: 28.4rem; */
 }

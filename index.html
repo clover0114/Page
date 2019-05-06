@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap cdn -->
+    <!-- bootstrap (css)cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+
+    <!-- bootstrap (Js, Popper.js, and jQuery)cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- my stylesheet -->
     <link rel="stylesheet" href="style/commons.css">
     <title>YudaiWork-Home</title>
 </head>
@@ -14,7 +24,7 @@
 <body>
     <div class="container">
 
-        <!-- adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
+        <!-- todo: adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
         <div class="title-main row justify-content-center">
             <h5>yudai-hidaki</h5>
         </div>
@@ -31,40 +41,59 @@
         <!-- cards -->
         <div class="row d-flex justify-content-center cards">
             <div class="card-deck">
-                <div class="card card-sizing">
-                    <img class="card-img-top" src="img/miyata_loveagain.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">友人のアーティストMIYATAのプロフィールサイト</h5>
-                        <p class="card-text text-wrap">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
-                        </p>
-                        <button type="button" class="btn btn-secondary">MIYATA</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last update ?</small>
+                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+                    <div class="card card-sizing">
+                        <img class="card-img-top" src="img/miyata_loveagain.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">友人のアーティストMIYATAのプロフィールサイト</h5>
+                            <p class="card-text text-wrap">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
+                            </p>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-success">HTML/CSS</span>
+                                <span class="badge badge-pill badge-danger">DESIGN</span>
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <!-- todo: tooltipを表示 -->
+                            <!-- <button type="button" class="btn btn-secondary" data-html="true" data-toggle="tooltip"
+                                    data-placement="top" title="<a href="#">MIYATAのプロフィールサイト</a>">MIYATA</button> -->
+                            <button id="tooltip" type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                data-placement="left" title="miyataウェブサイトへ">MIYATA</button>
+                            <!-- <small class="text-muted">Last update ?</small> -->
+                        </div>
                     </div>
                 </div>
 
-                <div class="card card-sizing">
-                    <img class="card-img-top" src="img/blank-img284.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Coming soon...</h5>
-                        <p class="card-text text-wrap">description.</p>
-                        <button type="button" class="btn btn-secondary">link</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">no status</small>
+                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+                    <div class="card card-sizing">
+                        <img class="card-img-top" src="img/blank-img284.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Coming soon...</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3"></div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
                     </div>
                 </div>
 
-                <div class="card card-sizing">
-                    <img class="card-img-top" src="img/blank-img284.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Coming soon...</h5>
-                        <p class="card-text text-wrap">description.</p>
-                        <button type="button" class="btn btn-secondary">link</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">no status</small>
+                <div class="col-xl-4 col-lg-6 col-md-6 py-3">
+                    <div class="card card-sizing">
+                        <img class="card-img-top" src="img/blank-img284.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Coming soon...</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3"></div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
                     </div>
                 </div>
 
@@ -83,7 +112,10 @@
         </div>
 
     </div>
-
+    <script>
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();        
+    </script>
 </body>
 
 </html>
