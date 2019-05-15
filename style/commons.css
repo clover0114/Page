@@ -18,6 +18,8 @@ h5[class^="card-title"] {
     font-weight: bolder;
 }
 
+
+
 /* col-のpaddingを打ち消し > no-gutters で可能 */
 /* div[class^="col-"] {
     padding: 0;
@@ -74,16 +76,26 @@ h5[class^="card-title"] {
     color: gray;
 }
 
+.my-black {
+    color: #000;
+}
+
 .testdirectory {
     margin: 3rem 0 0 0;
     height: 5rem;
 }
 
+.iconsize {
+    width: 3rem;
+    height: auto;
+}
 
+/* .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+} */
 
-
-
-.cards {
+. .cards {
     margin: 3rem 0 0 0;
     /* height: 60rem; */
 }

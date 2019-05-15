@@ -30,9 +30,12 @@
 <!-- githubやgoogle driveなどのアカウントをアイコンで羅列したグロナビを設置 -->
 <!-- todo: ジャケットを拡大した後、クリック範囲が広すぎてマウスカーソル移動でホバー範囲から外すの面倒 -->
 <!-- todo: adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
+<!-- todo: GoogleAnalyticsでどのくらいpvがあるかを確認 -->
 
 <body>
     <div class="container">
+        <!-- 全てのリンクは新しいタブで開かれるように設定 -->
+        <base target="_blank">
 
 
         <div class="title-main row justify-content-center">
@@ -51,14 +54,14 @@
         </div>
 
         <!-- global navigation -->
-        <div class="g-nav row d-flex justify-content-center align-items-center">
+        <div class="g-nav row d-flex justify-content-center align-items-center mb-5">
             <!-- <ol class="g-nav-list">
                 <li><a href="https://github.com/clover0114/" target="_blank"><i class="fab fa-spin fa-3x my-gray fa-github"></i></a></li>
             </ol> -->
             <ol class="list-group list-group-horizontal m-3">
-                <li class="list-group-item"><a href="https://github.com/clover0114/" target="_blank"><i class="fab fa-fw fa-3x my-gray fa-github"></i><span>GitHub</span></a></li>
-                <li class="list-group-item"><a href="https://github.com/clover0114/" target="_blank"><i class="fab fa-fw fa-3x my-gray fa-google-drive"></i><span>Google
-                            Drive</span></a></li>
+                <li class="list-group-item"><a href="https://github.com/clover0114/"><i class="fab fa-fw fa-3x my-black fa-github"></i></a></li>
+                <li class="list-group-item"><a href="https://www.notion.so/yudaiwork/c43a85bdf201431db97e04e0da0522e4"><img
+                            src="img/notion-logo-no-background.png" class="iconsize"></a></li>
             </ol>
         </div>
 
@@ -92,6 +95,24 @@
 
                 <div class="pxb-3">
                     <div class="card">
+                        <a href="#"><img class="jacket-img card-img-top" src="img/li.jpg_large" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text text-wrap">description.</p>
+                            <div class="badge-group py-3">
+                                <span class="badge badge-pill badge-info">illustration</span>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                                title="blank">link</button>
+                            <!-- <small class="text-muted">no status</small> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pxb-3">
+                    <div class="card">
                         <a href="#"><img class="jacket-img card-img-top" src="img/Flower.png" alt=""></a>
                         <div class="card-body">
                             <h5 class="card-title">Title</h5>
@@ -111,24 +132,6 @@
                 <div class="pxb-3">
                     <div class="card">
                         <a href="#"><img class="jacket-img card-img-top" src="img/TABACO.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>
-                            <!-- <small class="text-muted">no status</small> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
                         <div class="card-body">
                             <h5 class="card-title">Title</h5>
                             <p class="card-text text-wrap">description.</p>
