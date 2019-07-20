@@ -116,11 +116,9 @@ h5[class^="card-title"] {
     transition: .3s;
 }
 
-.jacket-img:hover {
+/* .jacket-img:hover {
     transform: scale(3);
     transition-duration: .3s;
-    /* cursor: pointer; */
-
-}
+} */
 
 /* カードのジャケットアニメーションここまで */
