@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap (css)cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!-- bootstrap (Js, Popper.js, and jQuery)cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome5.8.1 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>MIYATA</title>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-transparent  d-flex justify-content-between justify-content-center">
+        <a class="navbar-brand" href="#">
+            <h1>MIYATA</h1>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Biography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Discography</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- カルーセル -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <div class="row header no-gutters">
+            <div class="col-xl-2 site-title">
+                <p class="site-title-style">MIYATA</p>
+            </div>
+            <ol class="col-xl-8.5 g-navi-items-text">
+                <li>
+                    <h5>HOME</h5>
+                </li>
+                <li>
+                    <h5>BIO</h5>
+                </li>
+                <li>
+                    <h5>DISCO</h5>
+                </li>
+            </ol>
+            <ol class="col-xl-2 g-navi-items-icons">
+                <li>
+                    <h5><i class="fas fa-fw fa-play"></i></h5>
+                </li>
+                <li>
+                    <h5><i class="fas fa-fw fa-play"></i></h5>
+                </li>
+            </ol>
+        </div> -->
+
+
+
+
+
+
+        <!-- 今画像はどこを指しているかのインジケータ -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouseleExampleindicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouseleExampleindicators" data-slide-to="1"></li>
+            <li data-target="#carouseleExampleindicators" data-slide-to="2"></li>
+        </ol>
+        <!-- カルーセルの画像 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/carouselblank01.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carouselblank02.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/carouselblank03.png" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- miyataとは -->
+    <div class="container-fluid text-center">
+        <div class="row py-5">
+            <div class="col-12">
+                <h1>about miyata</h1>
+            </div>
+            <div class="col-12">
+                <p class="lead">miyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyatamiyata</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+
+
+    <!-- カード -->
+    <div class="card border-light pt-5">
+        <div class="row no-gutters pt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div>
+                    <img class="jacket-img card-img" src="/img/miyata_loveagain.jpg" alt="">
+                </div>
+                <div>
+                    <div class="card-body no-gutters">
+                        <h3 class="card-title">LOVEAGAIN 2</h3>
+                        <p class="card-text">descdescdescdescdescdescdescdescdescdescdesc</p>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-fw fa-play"></i><span class="px-3">今すぐ聴く</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="row pt-5">
+            <div class="footer d-flex col-12">
+                <ol class="p-5 col-3">
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                </ol>
+                <ol class="p-5 col-3">
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                </ol>
+                <ol class="p-5 col-3">
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                </ol>
+                <ol class="p-5 col-3">
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                    <li>aiueo</li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,239 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <!-- google font-Heebo -->
-    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
-
-    <!-- bootstrap (css)cdn -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- bootstrap (Js, Popper.js, and jQuery)cdn -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <!-- fontawesome5.8.1 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <!-- my stylesheet -->
-    <link rel="stylesheet" href="style/commons.css">
-    <title>YudaiWork-Home</title>
+    <!-- bootstrap レスポンシブ用メタタグ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- 上書きcss -->
+    <link rel="stylesheet" href="style/common.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Yudai Hidaki Portfolio</title>
 </head>
 
-<!-- githubやgoogle driveなどのアカウントをアイコンで羅列したグロナビを設置 -->
-<!-- todo: ジャケットを拡大した後、クリック範囲が広すぎてマウスカーソル移動でホバー範囲から外すの面倒 -->
-<!-- todo: adobe fontsか google fontsでいい感じのフォントで世界感を演出？ -->
-<!-- todo: GoogleAnalyticsでどのくらいpvがあるかを確認 -->
+<!-- navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand navbar-text text-white" href="#">OyuWork</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">         
+          <i class="fab fa-twitter twitter-white "></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>      
+    </div> -->
+  </nav>
 
-<body>
-    <div class="container">
-        <!-- 全てのリンクは新しいタブで開かれるように設定 -->
-        <base target="_blank">
+<body class="container">
+      
+      <!-- card-colmuns -->
+      <div class="card-columns">
 
-
-        <div class="title-main row justify-content-center">
-            <h5 class="fo-heebo">yudai-hidaki?</h5>
-        </div>
-        <div class="title-sub row justify-content-center">
-            <h1 class="fo-heebo">WORK</h1>
-
-            <!-- <h1><span class="d-flex align-items-center wipbadge badge badge-pill badge-primary">WORK<span class="badge badge-pill badge-light">WIP</span></span></h1> -->
-        </div>
-
-        <!-- desc -->
-        <div class="desc row d-flex justify-content-center align-items-center">
-            <p class="fo-heebo">This Page is made using<a href="https://getbootstrap.com/">&ensp;Bootstrap4</a></p>
-
-        </div>
-
-        <!-- global navigation -->
-        <div class="g-nav row d-flex justify-content-center align-items-center mb-5">
-            <!-- <ol class="g-nav-list">
-                <li><a href="https://github.com/clover0114/" target="_blank"><i class="fab fa-spin fa-3x my-gray fa-github"></i></a></li>
-            </ol> -->
-            <ol class="list-group list-group-horizontal m-3">
-                <li class="list-group-item"><a href="https://github.com/clover0114/"><i
-                            class="fab fa-fw fa-3x my-black fa-github"></i></a></li>
-                <li class="list-group-item"><a
-                        href="https://www.notion.so/yudaiwork/4214b2ae949140c981efd189828e69fb"><img
-                            src="img/notion-logo-no-background.png" class="iconsize"></a></li>
-            </ol>
-        </div>
-
-        <!-- cards -->
-        <div class="row d-flex justify-content-center cards">
-            <div class="card-columns row justify-content-center">
-                <!-- <div class="card-columns"></div>なら通常のように3つ並べたりできる -->
-                <!-- <div class="pxb-3">
-                    <div class="card">
-                        <a href="miyata/index.html"><img class="jacket-img card-img-top" src="img/miyata_loveagain.jpg"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">友人のアーティストMIYATAのプロフィールサイト</h5>
-                            <p class="card-text text-wrap">学生時代を共に過ごした友人MIYATAが初めてリリースしたアルバムのジャケットイラストを担当しました。さらにプロフィールサイトをデザイン、コーディングすることで勉強も兼ね彼の楽曲をさらに世の中に広げることのできるような手助けができればと考えて試行錯誤をしています。
-                            </p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-success">HTML/CSS</span>
-                                <span class="badge badge-pill badge-danger">DESIGN</span>
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">                            
-                            <button id="tooltip" type="button" class="btn btn-secondary" data-toggle="tooltip"
-                                data-placement="left" title="miyataウェブサイトへ" onclick="window.open('miyata/index.html')">MIYATA</button>                            
-                        </div>
-                    </div>
-                </div> -->
-
-
-
-                <div class="card" style="width: 90%;">
-                    <div class="card-body">
-                        <h5 class="card-title">ポートフォリオをダウンロードできます。</h5>
-                        <p class="card-text text-wrap">2019年7月より、制作を開始しました。(中身は古いものもあります)<br>
-                            内容は、アニメーター経験時代のキャラクター表や、個人制作のゲームを想定したイラスト、友人のジャケットイラストなどです。<br>
-                            サムネイルをクリック、または下のボタンからも<a href="img/portfolio.pdf"
-                                download="img/portfolio.pdf">ダウンロード</a>可能です。
-                        </p>
-                        <div class="badge-group py-3">
-                            <a href="https://www.adobe.com/jp/products/illustrator/beginner.html">
-                                <span class="badge badge-pill badge-info"
-                                    style="background-color:#322821;  color: #EF8B51;">Adobe Illustrator</span>
-                            </a>
-                            <a href="https://www.adobe.com/jp/products/photoshop/beginner.html"><span
-                                    class="badge badge-pill badge-danger"
-                                    style="background-color:#071D27;  color: #56C9FB;">Adobe Photoshop</span></a>
-                            <a href="https://procreate.art/"><span class="badge badge-pill badge-success"
-                                    style="background-color:#1D1D1D;  color: #B072CA;">iPad Procreate</span>
-                            </a>
-                        </div>
-                    </div>
-                    <a href="img/portfolio.pdf" download="img/portfolio.pdf" style="color:#fff;"><img
-                            class="jacket-img card-img-top" src="img/img_portfolio.png" alt=""></a>
-                    <div class="card-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
-                            title="pdf形式"><a href="img/portfolio.pdf" download="img/portfolio.pdf"
-                                style="color:#fff;">ポートフォリオダウンロード</a></button>
-                    </div>
-                </div>
-
-
-
-                <!-- 
-                 <div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/img_blank.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/img_blank.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>                            
-                        </div>
-                    </div>
-                </div> -->
-
-                <!--<div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/TABACO.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pxb-3">
-                    <div class="card">
-                        <a href="#"><img class="jacket-img card-img-top" src="img/free.png" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Title</h5>
-                            <p class="card-text text-wrap">description.</p>
-                            <div class="badge-group py-3">
-                                <span class="badge badge-pill badge-info">illustration</span>
-                            </div>
-                        </div>
-                        <div class="card-footer d-flex justify-content-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
-                                title="blank">link</button>                            
-                        </div>
-                    </div>
-                </div>
-
-
+        <!-- card-illust -->
+        <div class="card fly">
+            <img class="card-img-top" width="100%" height="100%" src="img/illust/free.png">
+            <div class="card-body">
+              <h5 class="card-title title">FREE</h5>
+              <p class="card-text">常識を忘れる奔放さを描きたかったです。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-        </div> -->
-
-                <!-- testdirectory -->
-                <!-- <div class="testdirectory row d-flex justify-content-center align-items-start">
-            <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">bootstrap4-test</button>
-                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('iamcat/index.html')">display:grid-test</button>
-                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">test</button>
-                <button type="button" class="btn btn-secondary mx-1" onclick="window.open('test/index.html')">test</button>
+          </div>
+        <!-- twitter -->
+      <a class="twitter-timeline" data-theme=”dark” data-chrome=”noheader” data-chrome=”nofooter” data-chrome=”noscrollbar” data-chrome=”noborders” data-lang="ja" data-width="100%" data-height="600" href="https://twitter.com/clover_0114?ref_src=twsrc%5Etfw">Tweets by clover_0114</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+        <!-- card-illust -->
+        <div class="card fly">
+            <img class="card-img-top" width="100%" height="100%" src="img/illust/li.jpg_large">
+            <div class="card-body">
+              <h5 class="card-title">Li</h5>
+              <p class="card-text">黄色と黒の組み合わせのビビットさに、脱力感は気に入っています。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-        </div> -->
+          </div>
 
-            </div>
-            <script>
-                // tooltip
-                $('[data-toggle="tooltip"]').tooltip();        
-            </script>
+          <!-- note -->
+          <div class="card p-3 fly">
+            <div>
+                <p class="card-text">2020年で27才になります。まだ自分が明確にどう生きたいのか、見つけられないままでいます。<br>ただ、いろいろ試した結果、絵は落書きみたいなものでも描いていきたいと思っています。</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                      2020年10月20日                    
+                  </small>
+                </footer>
+            </div>                
+          </div>
+          <!-- card-illust -->
+        <div class="card fly">
+            <img class="card-img-top" width="100%" height="100%" src="img/illust/TABACO.png">
+            <div class="card-body">
+              <h5 class="card-title">海辺</h5>
+              <p class="card-text">ノリと勢いで描きました。涼しさ。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>       
+          </div>
+        <!-- card-pdf-download -->
+       <div class="card fly">
+        <a href="" download="img/illust/portfolio.pdf"><img class="card-img-top" width="100%" height="100%" src="img/illust/img_portfolio.png"></a>
+        <div class="card-body">
+          <h5 class="card-title">イラスト用ポートフォリオ</h5>
+          <p class="card-text">ゲーム業界に転職する際に利用していたりしたポートフォリオです。</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>           
+          </div>
+        <!-- card-illust -->
+        <div class="card fly">
+            <img class="card-img-top" width="100%" height="100%" src="img/illust/headphonegirl-.png">
+            <div class="card-body">
+              <h5 class="card-title">Humming Girl</h5>
+              <p class="card-text">音楽。</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>           
+      </div>
+      <!-- card-illust -->
+      <div class="card fly">
+        <img class="card-img-top" width="100%" height="100%" src="img/illust/Witch'sRoom.jpeg">
+        <div class="card-body">
+          <h5 class="card-title">魔女の研究室</h5>
+          <p class="card-text">ごちゃごちゃした部屋に惹かれます。自分の部屋は別です。</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>  
+        
+      
+      
 </body>
-
 </html>

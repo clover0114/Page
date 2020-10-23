@@ -1,0 +1,52 @@
+
+nav {
+    font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
+    font-stretch: condensed;
+    font-weight: bolder;
+    font-style:italic;
+    opacity: 0.8;
+    /* filter: blur(0.1px); */
+}
+
+body { padding-top: 110px;
+    /* 筑紫A丸ゴシック */
+    /* font-family: "Noto Sans", "Tsukushi A Round Gothic", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo", "メイリオ"; */
+
+    /* M PLUS Rounded 1c */
+    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+
+    font-family: "Futura-CondensedExtraBold", Futura, sans-serif;
+    font-stretch: condensed;
+    /* font-weight: bolder; */
+    font-style: italic;
+    
+
+    /* fontsize */
+    font-size: small;
+ }
+
+/* アイコン */
+.twitter_white {
+    color: #ffffff;
+}
+
+/* アニメーション */
+.fly{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0) !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 0 0 0 0;
+}
+.fly:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+
+
